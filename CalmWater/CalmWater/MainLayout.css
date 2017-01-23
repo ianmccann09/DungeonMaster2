@@ -1,0 +1,10 @@
+﻿body { background-color: #232323; color: gainsboro; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: larger; text-align: center; }
+
+.niceLine { border-bottom: groove #ff6a00; }
+
+
+a.one { color: #0026ff; }
+a.two { color: #ffd800; }
+a.three { color: #0094ff; }
+a.four { color: #ff6a00; }
+

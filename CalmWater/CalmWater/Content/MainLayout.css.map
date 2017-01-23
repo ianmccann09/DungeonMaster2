@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,IACA;EACI,gBAAgB,EAAE,OAAO;EACzB,KAAK,EAAE,SAAS;EAChB,WAAW,EAAC,2DAA2D;EACvE,SAAS,EAAE,MAAM;EACjB,UAAU,EAAE,MAAM;;AAEtB,SAAU;EACF,aAAa,EAAE,MAAM;EACrB,KAAK,EAAE,QAAQ",
+"sources": ["MainLayout.scss"],
+"names": [],
+"file": "MainLayout.css"
+}
