@@ -1,0 +1,16 @@
+﻿@{
+
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+
+    <div>
+        <div>
+            <p>Choose A Difficulty To Start</p>
+        </div>
+        <ul>
+            <li><a class="btn btn-primary" type="button" href="@Url.Action("EasyGame", "HangMan")">Easy</a></li>
+            <li><a class="btn btn-primary" type="button" href="@Url.Action("NormalGame", "HangMan")">Normal</a></li>
+            <li><a class="btn btn-primary" type="button" href="@Url.Action("HardGame", "HangMan")">Hard</a></li>
+        </ul>
+    </div>
+

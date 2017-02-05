@@ -9,11 +9,31 @@ namespace Hangman.Controllers
     public class HangManController : Controller
     {
         // GET: HangMan
-        
 
-        public ActionResult PlayGame ()
+
+        public ActionResult PlayGame()
         {
-            
+
+            return View();
+        }
+        public ActionResult HangMan()
+        {
+
+            return View();
+        }
+        public ActionResult EasyGame()
+        {
+
+            return View();
+        }
+        public ActionResult NormalGame()
+        {
+
+            return View();
+        }
+        public ActionResult HardGame()
+        {
+
             return View();
         }
     }
