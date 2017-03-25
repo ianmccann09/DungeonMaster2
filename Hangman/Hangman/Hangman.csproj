@@ -117,6 +117,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\HangmanStyle.css" />
     <Content Include="Content\Scss1.css">
       <DependentUpon>Scss1.scss</DependentUpon>
     </Content>

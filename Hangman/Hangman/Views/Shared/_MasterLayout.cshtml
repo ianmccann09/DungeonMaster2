@@ -2,22 +2,51 @@
 
 <html>
 <head>
-    <meta name="viewport" content="width=device-width" />
-    <!-- Latest compiled and minified CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="~/Content/Scss1.css">
     <title>@ViewBag.Title</title>
+    <link rel="stylesheet" type="text/css" href="~/Content/HangmanStyle.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 <body>
-    <a class="pull-left btn btn-success" type="button" href="@Url.Action("PlayGame", "HangMan")">Home</a>
-    <div class="container-fluid">
-        @RenderBody()
-    </div>
-    <footer class="footer-design">
+    <header>
+        <a class="btn btn-success" type="button" href="@Url.Action("PlayGame", "HangMan")">Home</a>
+        <div>
+            <p>
+                HangMan is a guessing game for two players, in this case you versus your computer.  In this version
+                , the word to guess is represented be a row of dashes, which are replaced by underlined uppercase letters if you guess a letters
+                in the word before guessing ten incorrect letters, you win.  As you guess a letter, by clicking one of twenty six buttons (representing the alpahbet), that
+                is button and therefore that letter is disabled and that letter can't be used again.
+            </p>
+        </div>
+    </header>
+    <main>
+        <div class="container-fluid">
+            @RenderBody()
+        </div>
+    </main>
+    <footer class="container footer-design">
     </footer>
+        <section class="row"></section>
+        <div class="moving-zone">
+            <div class="popup">
+                <div class="popup-content">
+                    <div class="popup-text">
+                        I'm a new kind of <b>popup</b>.<br />
+                        Move your <b>mouse</b> around !
+                    </div>
+                </div>
+            </div>
+        </div>
 </body>
 </html>
+<script>
+  $( function() {
+    $( "#draggable" ).draggable();
+  } );
+</script>

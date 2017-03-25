@@ -1,0 +1,16 @@
+﻿body { height: 100%; background-color: #2b2b2b; }
+
+li { list-style: none; }
+header { }
+p { color: #4cff00; }
+align-content { color: #ffd800; }
+
+.choose-difficulty { background-color: #ff6a00; }
+    .choose-difficulty p { text-align: center; }
+
+footer { background-color: #2b2b2b; }
+    footer .footer-design { width: 100%; }
+    footer .Checker-Background1 { background-color: #000000; }
+    footer .Checker-Background2 { background-color: #2b2b2b; padding-top: 50px; }
+
+#draggable { width: 80px; height: 150px; padding: 0.5em; }

@@ -16,11 +16,6 @@ namespace Hangman.Controllers
 
             return View();
         }
-        public ActionResult HangMan()
-        {
-
-            return View();
-        }
         public ActionResult EasyGame()
         {
 
